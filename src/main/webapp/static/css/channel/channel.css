@@ -1,0 +1,84 @@
+.table th, .table td {
+    text-align: center;
+    vertical-align: middle !important;
+}
+
+.bs-bars {
+    width: 100%
+}
+
+.input-search {
+    width: 240px;
+    line-height: 20px;
+    margin-bottom: 0;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 12px;
+    padding-right: 12px;
+    border: 1px solid #c2cad8;
+    display: inline-block;
+    font-weight: 400;
+    text-align: left;
+    vertical-align: middle;
+    outline: 0 !important;
+    box-shadow: none !important;
+    background-color: #fff;
+    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+
+.input-search::-webkit-input-placeholder {
+    color: #A2A2A2;
+    text-align: left;
+}
+
+.input-search::-moz-placeholder {
+    color: #A2A2A2;
+    text-align: left;
+}
+
+.input-search:-ms-input-placeholder {
+    color: #A2A2A2;
+    text-align: left;
+}
+
+.input-search:focus {
+    border-color: #93a1bb;
+}
+
+.form-horizontal .key-label:after {
+    content: *;
+    color: #999;
+    font-size: 150%;
+}
+
+.modal .modal-dialog-control {
+    width: 70%;
+}
+
+.search-btn-dv, .search-inpt-dv {
+    position: relative;
+    line-height: 34px;
+    margin-bottom: 0px;
+    margin-left: 5px;
+    float: right !important;
+    vertical-align: middle;
+}
+
+.search-btn-dv-left, .search-inpt-dv-left {
+    position: relative;
+    line-height: 34px;
+    margin-bottom: 0px;
+    margin-right: 5px;
+    float: left !important;
+    vertical-align: middle;
+}
+
+.model-search-div {
+    float: right !important;
+}
+
+.modal-center-footer {
+    padding: 15px;
+    text-align: center;
+    border-top: 1px solid #e5e5e5;
+}

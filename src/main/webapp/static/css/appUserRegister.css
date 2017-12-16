@@ -1,0 +1,44 @@
+.login .content .register-form{
+  display: block; 
+ }
+.login .content .checkCode_input{
+	display:inline;
+  	width:60%; 
+ }
+ .login .content .checkCode_btn{
+ 	display:inline;
+	width:38%; 
+	float:right;
+ }
+ .login .content .form-register-submit{
+	text-align:center;
+	padding-top: 0px !important;
+ }
+ .login .content #register-submit-btn{
+	float:none !important;
+	width:100%;
+ }
+ .login .content{
+	margin-top:10px !important;
+ }
+ 
+ .login .userdeal_div{
+	margin-top:10px !important;
+	display:table;
+ }
+ 
+ .login .userdeal_txt{
+	    font-size: 12px;
+ }
+ 
+ .login .deal_checkbox{
+	    font-size: 12px;
+	    display:inline;
+ }
+ 
+ .login .user_deal_link{
+	    font-size: 12px;
+	    display:inline;
+	    display: table-cell;
+	    vertical-align: middle;
+ }

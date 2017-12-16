@@ -1,0 +1,16 @@
+#settlePeriod :-moz-placeholder
+{
+  text-align: right;
+}
+#settlePeriod::-moz-placeholder
+{
+  text-align: right;
+}
+#settlePeriod:-ms-input-placeholder
+{
+  text-align: right;
+}
+#settlePeriod::-webkit-input-placeholder
+{
+  text-align: right;
+}

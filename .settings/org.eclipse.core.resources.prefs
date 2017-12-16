@@ -1,0 +1,12 @@
+eclipse.preferences.version=1
+encoding//src/main/java/cn/ishow/entity/Person.java=UTF-8
+encoding//src/main/java/cn/ishow/entity/Word.java=UTF-8
+encoding//src/main/java/cn/ishow/entity/WordNote.java=UTF-8
+encoding//src/main/java/cn/ishow/mapper/WordMapper.java=UTF-8
+encoding//src/main/java/cn/ishow/mapper/WordNoteMapper.java=UTF-8
+encoding//src/main/java/cn/ishow/service/IWordNoteService.java=UTF-8
+encoding//src/main/java/cn/ishow/service/IWordService.java=UTF-8
+encoding//src/main/java/cn/ishow/service/impl/WordNoteServiceImpl.java=UTF-8
+encoding//src/main/java/cn/ishow/service/impl/WordServiceImpl.java=UTF-8
+encoding//src/main/java/cn/ishow/web/WordController.java=UTF-8
+encoding//src/main/java/cn/ishow/web/WordNoteController.java=UTF-8
