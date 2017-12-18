@@ -119,13 +119,21 @@ public abstract class ExcelUtils {
                         Date date = formate.parse(value);
                         field.set(bean, date);
                     }
+                } else if (fieldType.equals(Short.class)) {
+                    if (cell.getCellType() == Cell.CELL_TYPE_NUMERIC) {
+                        DecimalFormat format = new DecimalFormat("#");
+                        String value = format.format(cell.getNumericCellValue());
+                        field.set(bean, Short.parseShort(value));
+                    } else {
+                        String value = cell.getStringCellValue();
+                        field.set(bean, value);
+                    }
                 }
 
             }
             beans.add(bean);
         }
         workbook.close();
-        is.close();
         return beans;
     }
 
@@ -191,6 +199,8 @@ public abstract class ExcelUtils {
                     if (value instanceof Date) {
                         SimpleDateFormat formate = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
                         temp = formate.format(value);
+                    } else {
+                        temp = value + "";
                     }
                     cellTemp.setCellValue(temp);
                 }
@@ -199,7 +209,6 @@ public abstract class ExcelUtils {
 
         workbook.write(os);
         workbook.close();
-        os.close();
     }
 
     private static List<Field> getFields(Class clazz, List<String> heads) throws Exception {

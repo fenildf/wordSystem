@@ -49,7 +49,7 @@ public class ServerResponse implements Serializable{
 	}
 	
 	public static ServerResponse fail(){
-		return fail("²Ù×÷Ê§°Ü");
+		return fail("ï¿½ï¿½ï¿½ï¿½Ê§ï¿½ï¿½");
 	}
 	
 	public static ServerResponse success(String msg){
@@ -57,11 +57,11 @@ public class ServerResponse implements Serializable{
 	}
 	
 	public static ServerResponse success(){
-		return new ServerResponse(200,"²Ù×÷³É¹¦",null);
+		return new ServerResponse(200,"ï¿½ï¿½ï¿½ï¿½ï¿½É¹ï¿½",null);
 	}
 	
 	public static ServerResponse successWithData(Object data){
-		return new ServerResponse(200, "²Ù×÷³É¹¦", data);
+		return new ServerResponse(200, "ï¿½ï¿½ï¿½ï¿½ï¿½É¹ï¿½", data);
 	}
 	@Override
 	public String toString() {

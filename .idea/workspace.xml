@@ -6,27 +6,40 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d50b6cb7-170e-42ad-9dab-32d206fcbc8c" name="Default" comment="单词背诵系统第一版">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/cn/ishow/entity/Person.class" afterPath="$PROJECT_DIR$/target/classes/cn/ishow/entity/Person.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/cn/ishow/entity/Word.class" afterPath="$PROJECT_DIR$/target/classes/cn/ishow/entity/Word.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/cn/ishow/entity/WordNote.class" afterPath="$PROJECT_DIR$/target/classes/cn/ishow/entity/WordNote.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/cn/ishow/generator/AutoGeneratorPlus.class" afterPath="$PROJECT_DIR$/target/classes/cn/ishow/generator/AutoGeneratorPlus.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/cn/ishow/generator/ConfigBuilderPlus.class" afterPath="$PROJECT_DIR$/target/classes/cn/ishow/generator/ConfigBuilderPlus.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/cn/ishow/vo/StudentVo.class" afterPath="$PROJECT_DIR$/target/classes/cn/ishow/vo/StudentVo.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/cn/ishow/vo/WordVo.class" afterPath="$PROJECT_DIR$/target/classes/cn/ishow/vo/WordVo.class" />
+    <list default="true" id="d50b6cb7-170e-42ad-9dab-32d206fcbc8c" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/cn/ishow/test/AppTest.class" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/cn/ishow/generator/MybatisGenerator$1.class" afterPath="$PROJECT_DIR$/target/classes/cn/ishow/generator/MybatisGenerator$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/cn/ishow/generator/MybatisGenerator.class" afterPath="$PROJECT_DIR$/target/classes/cn/ishow/generator/MybatisGenerator.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/cn/ishow/generator/PathConfig.class" afterPath="$PROJECT_DIR$/target/classes/cn/ishow/generator/PathConfig.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/cn/ishow/init/InitServlet.class" afterPath="$PROJECT_DIR$/target/classes/cn/ishow/init/InitServlet.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/cn/ishow/init/SpringContextHolder.class" afterPath="$PROJECT_DIR$/target/classes/cn/ishow/init/SpringContextHolder.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/cn/ishow/mapper/PersonMapper.class" afterPath="$PROJECT_DIR$/target/classes/cn/ishow/mapper/PersonMapper.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/cn/ishow/mapper/WordMapper.class" afterPath="$PROJECT_DIR$/target/classes/cn/ishow/mapper/WordMapper.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/cn/ishow/mapper/WordNoteMapper.class" afterPath="$PROJECT_DIR$/target/classes/cn/ishow/mapper/WordNoteMapper.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/cn/ishow/service/IPersonService.class" afterPath="$PROJECT_DIR$/target/classes/cn/ishow/service/IPersonService.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/cn/ishow/service/IWordNoteService.class" afterPath="$PROJECT_DIR$/target/classes/cn/ishow/service/IWordNoteService.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/cn/ishow/service/IWordService.class" afterPath="$PROJECT_DIR$/target/classes/cn/ishow/service/IWordService.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/cn/ishow/service/impl/PersonServiceImpl.class" afterPath="$PROJECT_DIR$/target/classes/cn/ishow/service/impl/PersonServiceImpl.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/cn/ishow/service/impl/WordNoteServiceImpl.class" afterPath="$PROJECT_DIR$/target/classes/cn/ishow/service/impl/WordNoteServiceImpl.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/cn/ishow/service/impl/WordServiceImpl.class" afterPath="$PROJECT_DIR$/target/classes/cn/ishow/service/impl/WordServiceImpl.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/cn/ishow/utils/BeanUtils.class" afterPath="$PROJECT_DIR$/target/classes/cn/ishow/utils/BeanUtils.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/cn/ishow/utils/ServerResponse.class" afterPath="$PROJECT_DIR$/target/classes/cn/ishow/utils/ServerResponse.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/cn/ishow/utils/WebUtils.class" afterPath="$PROJECT_DIR$/target/classes/cn/ishow/utils/WebUtils.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/cn/ishow/utils/WordCache$Inner.class" afterPath="$PROJECT_DIR$/target/classes/cn/ishow/utils/WordCache$Inner.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/cn/ishow/utils/WordCache.class" afterPath="$PROJECT_DIR$/target/classes/cn/ishow/utils/WordCache.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/cn/ishow/vo/BaseVo.class" afterPath="$PROJECT_DIR$/target/classes/cn/ishow/vo/BaseVo.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/cn/ishow/vo/WordNoteVo.class" afterPath="$PROJECT_DIR$/target/classes/cn/ishow/vo/WordNoteVo.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/cn/ishow/web/PersonController.class" afterPath="$PROJECT_DIR$/target/classes/cn/ishow/web/PersonController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/cn/ishow/web/WordController.class" afterPath="$PROJECT_DIR$/target/classes/cn/ishow/web/WordController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/cn/ishow/web/WordNoteController.class" afterPath="$PROJECT_DIR$/target/classes/cn/ishow/web/WordNoteController.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/cn/ishow/utils/ExcelUtils.java" afterPath="$PROJECT_DIR$/src/main/java/cn/ishow/utils/ExcelUtils.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/cn/ishow/utils/ServerResponse.java" afterPath="$PROJECT_DIR$/src/main/java/cn/ishow/utils/ServerResponse.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/cn/ishow/utils/WebUtils.java" afterPath="$PROJECT_DIR$/src/main/java/cn/ishow/utils/WebUtils.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/cn/ishow/web/PersonController.java" afterPath="$PROJECT_DIR$/src/main/java/cn/ishow/web/PersonController.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/cn/ishow/web/WordController.java" afterPath="$PROJECT_DIR$/src/main/java/cn/ishow/web/WordController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/student/main.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/student/main.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/log4j.properties" afterPath="$PROJECT_DIR$/target/classes/log4j.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/mybatis/mapper/WordNoteMapper.xml" afterPath="$PROJECT_DIR$/target/classes/mybatis/mapper/WordNoteMapper.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/spring/spring-mvc.xml" afterPath="$PROJECT_DIR$/target/classes/spring/spring-mvc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/spring/spring-mybatis.xml" afterPath="$PROJECT_DIR$/target/classes/spring/spring-mybatis.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/m2e-wtp/web-resources/META-INF/maven/cn.ishow/work-system/pom.properties" afterPath="$PROJECT_DIR$/target/m2e-wtp/web-resources/META-INF/maven/cn.ishow/work-system/pom.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/m2e-wtp/web-resources/META-INF/maven/cn.ishow/work-system/pom.xml" afterPath="$PROJECT_DIR$/target/m2e-wtp/web-resources/META-INF/maven/cn.ishow/work-system/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/teacher/word_main.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/teacher/word_main.jsp" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -41,12 +54,22 @@
       <file leaf-file-name="PersonController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/cn/ishow/web/PersonController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="351">
+            <state relative-caret-position="203">
               <caret line="172" column="10" lean-forward="false" selection-start-line="172" selection-start-column="10" selection-end-line="172" selection-end-column="10" />
               <folding>
-                <marker date="1513579557588" expanded="true" signature="1250:1265" ph="/**...*/" />
-                <marker date="1513579557588" expanded="true" signature="5166:5169" ph="{...}" />
+                <marker date="1513581253954" expanded="true" signature="1250:1265" ph="/**...*/" />
+                <marker date="1513581253954" expanded="true" signature="5174:5177" ph="{...}" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="WordNoteController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/cn/ishow/web/WordNoteController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="29" column="13" lean-forward="false" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="13" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -54,8 +77,8 @@
       <file leaf-file-name="WordController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/cn/ishow/web/WordController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="351">
-              <caret line="114" column="9" lean-forward="false" selection-start-line="114" selection-start-column="9" selection-end-line="114" selection-end-column="9" />
+            <state relative-caret-position="511">
+              <caret line="146" column="22" lean-forward="false" selection-start-line="146" selection-start-column="22" selection-end-line="146" selection-end-column="22" />
               <folding />
             </state>
           </provider>
@@ -64,7 +87,7 @@
       <file leaf-file-name="Word.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/cn/ishow/entity/Word.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="411">
+            <state relative-caret-position="27">
               <caret line="32" column="25" lean-forward="false" selection-start-line="32" selection-start-column="19" selection-end-line="32" selection-end-column="25" />
               <folding />
             </state>
@@ -74,28 +97,38 @@
       <file leaf-file-name="Person.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/cn/ishow/entity/Person.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="484">
+            <state relative-caret-position="567">
               <caret line="27" column="28" lean-forward="false" selection-start-line="27" selection-start-column="19" selection-end-line="27" selection-end-column="28" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ExcelUtils.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ExcelUtils.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/cn/ishow/utils/ExcelUtils.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="127" column="19" lean-forward="true" selection-start-line="127" selection-start-column="19" selection-end-line="127" selection-end-column="19" />
+            <state relative-caret-position="527">
+              <caret line="134" column="9" lean-forward="true" selection-start-line="134" selection-start-column="9" selection-end-line="134" selection-end-column="9" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="WebUtils.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="word_main.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/teacher/word_main.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="8613">
+              <caret line="319" column="58" lean-forward="false" selection-start-line="319" selection-start-column="47" selection-end-line="319" selection-end-column="58" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="WebUtils.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/cn/ishow/utils/WebUtils.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="58" column="16" lean-forward="false" selection-start-line="58" selection-start-column="16" selection-end-line="58" selection-end-column="16" />
+            <state relative-caret-position="230">
+              <caret line="70" column="101" lean-forward="true" selection-start-line="70" selection-start-column="75" selection-end-line="70" selection-end-column="101" />
               <folding />
             </state>
           </provider>
@@ -114,19 +147,14 @@
       <file leaf-file-name="ServerResponse.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/cn/ishow/utils/ServerResponse.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-621">
+            <state relative-caret-position="108">
               <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
               <folding>
                 <element signature="e#961#962#0" expanded="true" />
-                <element signature="e#987#988#0" expanded="true" />
-                <element signature="e#1040#1041#0" expanded="true" />
-                <element signature="e#1088#1089#0" expanded="true" />
-                <element signature="e#1131#1132#0" expanded="true" />
-                <element signature="e#1180#1181#0" expanded="true" />
-                <element signature="e#1242#1243#0" expanded="true" />
-                <element signature="e#1293#1294#0" expanded="true" />
-                <marker date="1513306478609" expanded="false" signature="1331:1336" ph=" { " />
-                <marker date="1513306478609" expanded="false" signature="1416:1419" ph=" }" />
+                <marker date="1513581257312" expanded="true" signature="1300:1303" ph=" }" />
+                <marker date="1513581257312" expanded="false" signature="1340:1345" ph=" { " />
+                <marker date="1513581257312" expanded="false" signature="1425:1428" ph=" }" />
+                <marker date="1513581257312" expanded="true" signature="1477:1675" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -147,9 +175,10 @@
       <list>
         <option value="$PROJECT_DIR$/src/main/java/cn/ishow/utils/BeanUtils.java" />
         <option value="$PROJECT_DIR$/src/main/java/cn/ishow/utils/ServerResponse.java" />
-        <option value="$PROJECT_DIR$/src/main/java/cn/ishow/utils/WebUtils.java" />
         <option value="$PROJECT_DIR$/src/main/java/cn/ishow/web/PersonController.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/teacher/word_main.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/cn/ishow/web/WordController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/ishow/utils/WebUtils.java" />
         <option value="$PROJECT_DIR$/src/main/java/cn/ishow/utils/ExcelUtils.java" />
       </list>
     </option>
@@ -202,9 +231,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="Scope" />
-      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -261,21 +290,40 @@
               <item name="word-system" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="word-system" type="b2602c69:ProjectViewProjectNode" />
               <item name="word-system" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="other" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="word-system" type="b2602c69:ProjectViewProjectNode" />
+              <item name="word-system" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+              <item name="view" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="word-system" type="b2602c69:ProjectViewProjectNode" />
+              <item name="word-system" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+              <item name="view" type="462c0819:PsiDirectoryNode" />
+              <item name="teacher" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -469,7 +517,8 @@
       <updated>1513408870496</updated>
       <workItem from="1513408877799" duration="8311000" />
       <workItem from="1513570658832" duration="1563000" />
-      <workItem from="1513578389273" duration="1856000" />
+      <workItem from="1513578389273" duration="2680000" />
+      <workItem from="1513581131108" duration="933000" />
     </task>
     <task id="LOCAL-00001" summary="单词背诵系统第一版">
       <created>1513578467746</created>
@@ -478,11 +527,18 @@
       <option name="project" value="LOCAL" />
       <updated>1513578467746</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="抽取导入代码">
+      <created>1513580288350</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1513580288350</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11730000" />
+    <option name="totallyTimeSpent" value="13487000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-11" y="-11" width="1942" height="1042" extended-state="6" />
@@ -490,7 +546,7 @@
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32897863" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32897863" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -500,16 +556,16 @@
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32897863" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32897863" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4976247" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.10213777" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24298055" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24730022" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -529,7 +585,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="单词背诵系统第一版" />
-    <option name="LAST_COMMIT_MESSAGE" value="单词背诵系统第一版" />
+    <MESSAGE value="抽取导入代码" />
+    <option name="LAST_COMMIT_MESSAGE" value="抽取导入代码" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -539,39 +596,107 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/java/cn/ishow/web/PersonController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="3726">
+          <caret line="172" column="10" lean-forward="false" selection-start-line="172" selection-start-column="10" selection-end-line="172" selection-end-column="10" />
           <folding>
-            <marker date="1513579557588" expanded="true" signature="1250:1265" ph="/**...*/" />
-            <marker date="1513579557588" expanded="true" signature="5166:5169" ph="{...}" />
+            <marker date="1513581253954" expanded="true" signature="1250:1265" ph="/**...*/" />
+            <marker date="1513581253954" expanded="true" signature="5174:5177" ph="{...}" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/ishow/web/WordController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3942">
+          <caret line="146" column="22" lean-forward="true" selection-start-line="146" selection-start-column="22" selection-end-line="146" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/ishow/entity/Word.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="864">
+          <caret line="32" column="25" lean-forward="false" selection-start-line="32" selection-start-column="19" selection-end-line="32" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/ishow/entity/Person.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="729">
+          <caret line="27" column="28" lean-forward="false" selection-start-line="27" selection-start-column="19" selection-end-line="27" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/ishow/utils/ExcelUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2754">
+          <caret line="126" column="25" lean-forward="true" selection-start-line="126" selection-start-column="25" selection-end-line="126" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/teacher/word_main.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="8613">
+          <caret line="319" column="58" lean-forward="false" selection-start-line="319" selection-start-column="47" selection-end-line="319" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/ishow/utils/BeanUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="2" column="22" lean-forward="false" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/cn/ishow/utils/ServerResponse.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-621">
+        <state relative-caret-position="108">
           <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
           <folding>
             <element signature="e#961#962#0" expanded="true" />
-            <element signature="e#987#988#0" expanded="true" />
-            <element signature="e#1040#1041#0" expanded="true" />
-            <element signature="e#1088#1089#0" expanded="true" />
-            <element signature="e#1131#1132#0" expanded="true" />
-            <element signature="e#1180#1181#0" expanded="true" />
-            <element signature="e#1242#1243#0" expanded="true" />
-            <element signature="e#1293#1294#0" expanded="true" />
-            <marker date="1513306478609" expanded="false" signature="1331:1336" ph=" { " />
-            <marker date="1513306478609" expanded="false" signature="1416:1419" ph=" }" />
+            <marker date="1513581257312" expanded="true" signature="1300:1303" ph=" }" />
+            <marker date="1513581257312" expanded="false" signature="1340:1345" ph=" { " />
+            <marker date="1513581257312" expanded="false" signature="1425:1428" ph=" }" />
+            <marker date="1513581257312" expanded="true" signature="1477:1675" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/cn/ishow/utils/WebUtils.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="58" column="16" lean-forward="false" selection-start-line="58" selection-start-column="16" selection-end-line="58" selection-end-column="16" />
+        <state relative-caret-position="1674">
+          <caret line="79" column="0" lean-forward="true" selection-start-line="79" selection-start-column="0" selection-end-line="79" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/ishow/web/PersonController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1513581253954" expanded="true" signature="1250:1265" ph="/**...*/" />
+            <marker date="1513581253954" expanded="true" signature="5174:5177" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/ishow/utils/ServerResponse.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <folding>
+            <element signature="e#961#962#0" expanded="true" />
+            <marker date="1513581257312" expanded="true" signature="1300:1303" ph=" }" />
+            <marker date="1513581257312" expanded="false" signature="1340:1345" ph=" { " />
+            <marker date="1513581257312" expanded="false" signature="1425:1428" ph=" }" />
+            <marker date="1513581257312" expanded="true" signature="1477:1675" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -585,43 +710,67 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/cn/ishow/entity/Person.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="484">
+        <state relative-caret-position="567">
           <caret line="27" column="28" lean-forward="false" selection-start-line="27" selection-start-column="19" selection-end-line="27" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/teacher/word_main.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="8613">
+          <caret line="319" column="58" lean-forward="false" selection-start-line="319" selection-start-column="47" selection-end-line="319" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/ishow/entity/Word.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="27">
+          <caret line="32" column="25" lean-forward="false" selection-start-line="32" selection-start-column="19" selection-end-line="32" selection-end-column="25" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/cn/ishow/web/PersonController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
+        <state relative-caret-position="203">
           <caret line="172" column="10" lean-forward="false" selection-start-line="172" selection-start-column="10" selection-end-line="172" selection-end-column="10" />
           <folding>
-            <marker date="1513579557588" expanded="true" signature="1250:1265" ph="/**...*/" />
-            <marker date="1513579557588" expanded="true" signature="5166:5169" ph="{...}" />
+            <marker date="1513581253954" expanded="true" signature="1250:1265" ph="/**...*/" />
+            <marker date="1513581253954" expanded="true" signature="5174:5177" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/ishow/entity/Word.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/ishow/web/WordNoteController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="411">
-          <caret line="32" column="25" lean-forward="false" selection-start-line="32" selection-start-column="19" selection-end-line="32" selection-end-column="25" />
+        <state relative-caret-position="240">
+          <caret line="29" column="13" lean-forward="false" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/cn/ishow/web/WordController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="114" column="9" lean-forward="false" selection-start-line="114" selection-start-column="9" selection-end-line="114" selection-end-column="9" />
+        <state relative-caret-position="511">
+          <caret line="146" column="22" lean-forward="false" selection-start-line="146" selection-start-column="22" selection-end-line="146" selection-end-column="22" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/cn/ishow/utils/ExcelUtils.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="127" column="19" lean-forward="true" selection-start-line="127" selection-start-column="19" selection-end-line="127" selection-end-column="19" />
+        <state relative-caret-position="527">
+          <caret line="134" column="9" lean-forward="true" selection-start-line="134" selection-start-column="9" selection-end-line="134" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/ishow/utils/WebUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="70" column="101" lean-forward="true" selection-start-line="70" selection-start-column="75" selection-end-line="70" selection-end-column="101" />
           <folding />
         </state>
       </provider>

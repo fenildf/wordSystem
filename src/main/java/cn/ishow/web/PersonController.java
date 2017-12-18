@@ -37,10 +37,10 @@ import org.springframework.stereotype.Controller;
 
 /**
  * <p>
- *  ²âÊÔ
+ *  æµ‹è¯•
  * </p>
  *
- * @author ²âÊÔ
+ * @author æµ‹è¯•
  * @since 2017-12-11
  */
 @Controller
@@ -62,14 +62,14 @@ public class PersonController {
 	@ResponseBody
 	public Object login(String loginName,String password){
 		if(BeanUtils.strIsNUll(loginName))
-			return ServerResponse.fail("ÇëÊäÈëÕËºÅ");
+			return ServerResponse.fail("è¯·è¾“å…¥è´¦å·");
 		if(BeanUtils.strIsNUll(password))
-			return ServerResponse.fail("ÇëÊäÈëÃÜÂë");
+			return ServerResponse.fail("è¯·è¾“å…¥å¯†ç ");
 		Wrapper<Person> wrapper = new EntityWrapper<>();
 		wrapper.where("login_name = {0} and password = {1}", loginName,password);
 		Person person = personService.selectOne(wrapper);
 		if(person==null)
-			return ServerResponse.fail("ÄãÊäÈëµÄÕËºÅ»òÃÜÂëÓĞÎó");
+			return ServerResponse.fail("ä½ è¾“å…¥çš„è´¦å·æˆ–å¯†ç æœ‰è¯¯");
 		WebUtils.savePerson(person);
 		return ServerResponse.success();
 	}
@@ -107,11 +107,11 @@ public class PersonController {
 	@ResponseBody
 	public Object saveStudent(Person person){
 		person.setDeleteFlag(0);
-		//ÃÜÂëÄ¬ÈÏºÍÑ§ºÅÒ»ÖÂ
+		//å¯†ç é»˜è®¤å’Œå­¦å·ä¸€è‡´
 		person.setPassword(person.getLoginName());
 		person.setRole(Person.STUDENT_ROLE);
-		
-		//ÅĞ¶ÏÑ§ºÅÊÇ·ñÎ¨Ò»
+
+		//åˆ¤æ–­å­¦å·æ˜¯å¦å”¯ä¸€
 		Wrapper<Person> wrapper = new EntityWrapper<>();
 		wrapper.where(" delete_flag=0 and login_name = {0}", person.getLoginName());
 		if(person.getId()!=null){
@@ -119,14 +119,14 @@ public class PersonController {
 		}
 		int count = personService.selectCount(wrapper);
 		if(count>0){
-			return ServerResponse.fail("¸ÃÑ§ºÅÒÑ¾­´æÔÚ");
+			return ServerResponse.fail("è¯¥å­¦å·å·²ç»å­˜åœ¨");
 		}
 		if(person.getId()==null){
 			personService.insert(person);
-			return ServerResponse.success("±£´æ³É¹¦");
+			return ServerResponse.success("ä¿å­˜æˆåŠŸ");
 		}else{
 			personService.updateById(person);
-			return ServerResponse.success("ĞŞ¸Ä³É¹¦");
+			return ServerResponse.success("ä¿®æ”¹æˆåŠŸ");
 		}
 	}
 	
@@ -135,9 +135,9 @@ public class PersonController {
 	public Object deleteStudent(Integer id){
 	 boolean flag =	personService.deleteById(id);
 	 if(flag){
-		 return ServerResponse.success("É¾³ı³É¹¦");
+		 return ServerResponse.success("åˆ é™¤æˆåŠŸ");
 	 }
-	 return ServerResponse.fail("É¾³ıÊ§°Ü");
+		return ServerResponse.fail("åˆ é™¤å¤±è´¥");
 	}
 	
 	
@@ -146,7 +146,7 @@ public class PersonController {
 	public Object getPersonById(Integer id){
 		Person person = personService.selectById(id);
 		if(person==null)
-			return ServerResponse.fail("Î´ÕÒµ½Êı¾İ");
+			return ServerResponse.fail("æœªæ‰¾åˆ°æ•°æ®");
 		return ServerResponse.successWithData(person);
 	}
 	
@@ -157,7 +157,7 @@ public class PersonController {
 		String fileName = file.getOriginalFilename();
 		logger.info(">>>>>>>>>>>fileName:"+fileName);
 		 if(!fileName.matches("^.+\\.(?i)((xls)|(xlsx))$")){
-			 return ServerResponse.fail("ÇëÑ¡ÔñexcelÎÄ¼ş");
+			 return ServerResponse.fail("è¯·é€‰æ‹©excelæ–‡ä»¶");
 		 }
 		 try {
 			 List<Person> persons = ExcelUtils.importData(Person.class, file.getOriginalFilename(), file.getInputStream(), new ArrayList<>(Arrays.asList("loginName", "name", "gender")));
@@ -166,10 +166,10 @@ public class PersonController {
 				 person.setRole(Person.STUDENT_ROLE);
 			 }
 			 personService.insertBatch(persons);
-			 return ServerResponse.success("ÅúÁ¿µ¼Èë³É¹¦");
+			 return ServerResponse.success("æ‰¹é‡å¯¼å…¥æˆåŠŸ");
 		 } catch (Exception e) {
 			 logger.error(e);
-			 return ServerResponse.fail("ÅúÁ¿µ¼ÈëÊ§°Ü");
+			 return ServerResponse.fail("æ‰¹é‡å¯¼å…¥å¤±è´¥");
 		 }
 	}
 	

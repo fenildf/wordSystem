@@ -3,10 +3,7 @@ package cn.ishow.web;
 
 import cn.ishow.entity.Word;
 import cn.ishow.service.IWordService;
-import cn.ishow.utils.BeanUtils;
-import cn.ishow.utils.ExcelUtils;
-import cn.ishow.utils.ServerResponse;
-import cn.ishow.utils.WordCache;
+import cn.ishow.utils.*;
 import cn.ishow.vo.WordVo;
 import com.baomidou.mybatisplus.mapper.EntityWrapper;
 import com.baomidou.mybatisplus.mapper.Wrapper;
@@ -133,5 +130,20 @@ public class WordController {
         map.put("falseChinaName2", results[1]);
         map.put("falseChinaName3", results[2]);
         return ServerResponse.successWithData(map);
+    }
+
+
+    @RequestMapping("/exportExcel")
+    @ResponseBody
+    public void exportExcel() {
+        Wrapper<Word> wrapper = new EntityWrapper<>();
+        wrapper.where("1=1");
+        List<Word> words = wordService.selectList(wrapper);
+        logger.info("单词的数量:" + words.size());
+        LinkedHashMap<String, String> map = new LinkedHashMap<>();
+        map.put("英文", "englishName");
+        map.put("中文", "chinaName");
+        map.put("补充", "detail");
+        WebUtils.exportExcel(map, words, "单词表");
     }
 }

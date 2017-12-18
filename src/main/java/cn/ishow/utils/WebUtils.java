@@ -68,7 +68,7 @@ public abstract class WebUtils {
 		response.reset();
 		response.setContentType("application/x-excel");
 		response.setCharacterEncoding("UTF-8");
-		response.addHeader("Content-Disposition", "attachment;filename=" + fileName + ".xls");// excel文件名
+		response.addHeader("Content-Disposition", "attachment;filename=" + System.currentTimeMillis() + ".xls");// excel文件名
 		try {
 			ExcelUtils.exportData(beans, response.getOutputStream(), head, fileName);
 		} catch (Exception e) {

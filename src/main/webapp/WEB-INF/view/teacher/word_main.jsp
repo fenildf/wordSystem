@@ -32,6 +32,9 @@
                     <a href="#" id="batch_add_btn" class="btn btn-primary" role="button">
                         <i class="glyphicon glyphicon-trash"></i>批量导入
                     </a>
+                    <a href="#" id="batch_export_btn" class="btn btn-primary" role="button">
+                        <i class="glyphicon glyphicon-trash"></i>批量导出
+                    </a>
                     
                      <a href="#" id="search_btn" class="btn btn-primary" role="button" style="margin-top: 6px;float:right;height:30px">
                         <i class="glyphicon glyphicon-zoom-in"></i>搜索
@@ -310,6 +313,12 @@
 				backdrop:'static'
 			});
 	 });
+
+
+      //批量导出按钮
+      $("#batch_export_btn").bind("click", function () {
+          window.location.href = "${basePath}/word/exportExcel.do";
+      });
   </script> 
   
 
