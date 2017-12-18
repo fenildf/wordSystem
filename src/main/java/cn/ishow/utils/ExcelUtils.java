@@ -63,7 +63,13 @@ public abstract class ExcelUtils {
                 Cell cell = row.getCell(j);
                 Class fieldType = field.getType();
                 if (fieldType.equals(String.class)) {
-                    field.set(bean, cell.getStringCellValue());
+                    if (cell.getCellType() == Cell.CELL_TYPE_NUMERIC) {
+                        DecimalFormat format = new DecimalFormat("#");
+                        String value = format.format(cell.getNumericCellValue());
+                        field.set(bean, value);
+                    } else {
+                        field.set(bean, cell.getStringCellValue());
+                    }
                 } else if (fieldType.equals(Integer.class)) {
                     if (cell.getCellType() == Cell.CELL_TYPE_NUMERIC) {
                         DecimalFormat format = new DecimalFormat("#");
@@ -118,6 +124,8 @@ public abstract class ExcelUtils {
             }
             beans.add(bean);
         }
+        workbook.close();
+        is.close();
         return beans;
     }
 

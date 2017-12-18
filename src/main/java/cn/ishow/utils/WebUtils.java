@@ -8,58 +8,41 @@ import org.springframework.web.context.request.ServletRequestAttributes;
 
 import cn.ishow.entity.Person;
 
+import java.util.LinkedHashMap;
+import java.util.List;
+
 public abstract class WebUtils {
 	
 	private static  ServletRequestAttributes getServletRequestAttributes(){
 		return (ServletRequestAttributes) RequestContextHolder.getRequestAttributes();
 	}
 	
-	/**
-	 * ªÒ»°request∂‘œÛ
-	 * @return
-	 */
+
 	public static HttpServletRequest getRequest(){
 		return getServletRequestAttributes().getRequest();
 	}
-	
-	/**
-	 * ªÒ»°response∂‘œÛ
-	 * @return
-	 */
+
+
 	public static HttpServletResponse getResponse(){
 		return getServletRequestAttributes().getResponse();
 	}
-	
-	/**
-	 * Ω´∂‘œÛ∞¥º¸÷µ∂‘–Œ Ω±£¥ÊµΩrequest”Ú÷–
-	 * @param key
-	 * @param value
-	 */
+
+
 	public static void save2Request(String key,Object value){
 		getRequest().setAttribute(key, value);
 	}
-	
-	/**
-	 * Ω´∂‘œÛ∞¥º¸÷µ∂‘µƒ–Œ Ω±£¥ÊSession÷–
-	 * @param key
-	 * @param value
-	 */
+
+
 	public static void save2Session(String key,Object value){
 		getServletRequestAttributes().setAttribute(key, value, ServletRequestAttributes.SCOPE_SESSION);
 	}
-	
-	/**
-	 * ±£¥Ê”√ªßµΩsession÷–
-	 * @param person
-	 */
+
+
 	public static void savePerson(Person person){
 		save2Session("person", person);
 	}
-	
-	/**
-	 * ¥”session÷–ªÒ»°”√ªß
-	 * @return
-	 */
+
+
 	public static Person getPerson(){
 		return (Person) getServletRequestAttributes().getAttribute("person", ServletRequestAttributes.SCOPE_SESSION);
 	}
@@ -70,6 +53,29 @@ public abstract class WebUtils {
 		if(person.getRole()==0)
 			return false;
 		return true;
+	}
+
+	/**
+	 * ÊâπÈáèÂØºÂá∫excel
+	 *
+	 * @param head
+	 * @param beans
+	 * @param fileName
+	 * @param <T>
+	 */
+	public static <T> void exportExcel(LinkedHashMap<String, String> head, List<T> beans, String fileName) {
+		HttpServletResponse response = getResponse();
+		response.reset();
+		response.setContentType("application/x-excel");
+		response.setCharacterEncoding("UTF-8");
+		response.addHeader("Content-Disposition", "attachment;filename=" + fileName + ".xls");// excelÊñá‰ª∂Âêç
+		try {
+			ExcelUtils.exportData(beans, response.getOutputStream(), head, fileName);
+		} catch (Exception e) {
+			e.printStackTrace();
+			throw new RuntimeException(e);
+		}
+
 	}
 
 }

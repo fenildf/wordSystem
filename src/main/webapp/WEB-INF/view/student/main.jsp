@@ -164,7 +164,18 @@
                 var data = result.data;
                 $("#wordId").val(data.wordId);
                 $("#englishName").val(data.englishName);
-                var str = '<td><input type="radio" value="1" name="answer"/>' + data.rightChinaName + '<br><input type="radio" value="0" name="answer"/>' + data.falseChinaName1 + '<br><input type="radio" value="0" name="answer"/>' + data.falseChinaName2 + '<br><input type="radio" value="0" name="answer"/>' + data.falseChinaName3 + '</td>';
+                var str = "";
+                var index = getRandomNum(0, 3);
+                if (index == 0) {
+                    str = '<td><input type="radio" value="1" name="answer"/>' + data.rightChinaName + '<br><input type="radio" value="0" name="answer"/>' + data.falseChinaName1 + '<br><input type="radio" value="0" name="answer"/>' + data.falseChinaName2 + '<br><input type="radio" value="0" name="answer"/>' + data.falseChinaName3 + '</td>';
+                } else if (index == 1) {
+                    str = '<td><input type="radio" value="0" name="answer"/>' + data.falseChinaName1 + '<br><input type="radio" value="1" name="answer"/>' + data.rightChinaName + '<br><input type="radio" value="0" name="answer"/>' + data.falseChinaName2 + '<br><input type="radio" value="0" name="answer"/>' + data.falseChinaName3 + '</td>';
+                } else if (index == 2) {
+                    str = '<td><input type="radio" value="0" name="answer"/>' + data.falseChinaName1 + '<br><input type="radio" value="0" name="answer"/>' + data.falseChinaName2 + '<br><input type="radio" value="0" name="answer"/>' + data.rightChinaName + '<br><input type="radio" value="0" name="answer"/>' + data.falseChinaName3 + '</td>';
+                } else if (index == 3) {
+                    str = '<td><input type="radio" value="0" name="answer"/>' + data.falseChinaName1 + '<br><input type="radio" value="0" name="answer"/>' + data.falseChinaName2 + '<br><input type="radio" value="0" name="answer"/>' + data.falseChinaName3 + '<br><input type="radio" value="1" name="answer"/>' + data.rightChinaName + '</td>';
+                }
+                	
                 $("#radio_tr").html(str)
             } else {
                 layer.msg(result.msg);
@@ -230,6 +241,12 @@
         });
     }
 
+    //获取随机数字
+    function getRandomNum(Min, Max) {
+        var Range = Max - Min;
+        var Rand = Math.random();
+        return (Min + Math.round(Rand * Range));
+    }   
 </script>
 
 

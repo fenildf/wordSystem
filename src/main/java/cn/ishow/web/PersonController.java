@@ -1,6 +1,7 @@
 package cn.ishow.web;
 
 
+import cn.ishow.utils.ExcelUtils;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.multipart.MultipartFile;
@@ -21,10 +22,7 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.text.DecimalFormat;
-import java.util.HashMap;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 import org.apache.log4j.Logger;
 import org.apache.poi.hssf.usermodel.HSSFCell;
@@ -161,60 +159,18 @@ public class PersonController {
 		 if(!fileName.matches("^.+\\.(?i)((xls)|(xlsx))$")){
 			 return ServerResponse.fail("请选择excel文件");
 		 }
-		 InputStream is = null;
 		 try {
-			is = file.getInputStream();
-			 boolean is03Excel = fileName.matches("^.+\\.(?i)(xls)$");
-			 //1.读取工作簿
-	         Workbook workbook = is03Excel?new HSSFWorkbook(is):new XSSFWorkbook(is);
-	         //2.读取工作表
-	        Sheet sheet = workbook.getSheetAt(0);
-	        if(sheet.getPhysicalNumberOfRows() > 2){
-	        	List<Person> persons = new LinkedList<>();
-	        	//跳过前两行
-                for(int k=2;k<sheet.getPhysicalNumberOfRows();k++ )
-                {
-                	Person person = null;
-                    //读取单元格
-                    Row row0 = sheet.getRow(k);
-                    person = new Person();
-                    //学号
-                    Cell cell0 = row0.getCell(0);
-                   int type =  cell0.getCellType();
-                   if(type==HSSFCell.CELL_TYPE_STRING){
-                	   person.setLoginName(cell0.getStringCellValue());
-                   }else{  
-                	  String loginName = new DecimalFormat("#.######").format(cell0.getNumericCellValue());
-                	  person.setLoginName(loginName);
-                   }
-                   
-                    //姓名
-                    Cell cell1 = row0.getCell(1);
-                    person.setName(cell1.getStringCellValue());
-                    //性别
-                    Cell cell2 = row0.getCell(2);
-                    person.setGender(cell2.getStringCellValue());
-                    person.setPassword(person.getLoginName());
-                    person.setDeleteFlag(0);
-                    person.setRole(Person.STUDENT_ROLE);
-                    persons.add(person);
-                }
-                personService.insertBatch(persons);
-            }
-            workbook.close();
-            return ServerResponse.success("批插入成功");
-		} catch (IOException e) {
-			e.printStackTrace();
-			return ServerResponse.fail("批插入失败");
-		}finally{
-			if(is!=null){
-				try {
-					is.close();
-				} catch (IOException e) {
-					e.printStackTrace();
-				}
-			}
-		}
+			 List<Person> persons = ExcelUtils.importData(Person.class, file.getOriginalFilename(), file.getInputStream(), new ArrayList<>(Arrays.asList("loginName", "name", "gender")));
+			 for (Person person : persons) {
+				 person.setDeleteFlag(0);
+				 person.setRole(Person.STUDENT_ROLE);
+			 }
+			 personService.insertBatch(persons);
+			 return ServerResponse.success("批量导入成功");
+		 } catch (Exception e) {
+			 logger.error(e);
+			 return ServerResponse.fail("批量导入失败");
+		 }
 	}
 	
 	@RequestMapping("/studentMain")

@@ -73,7 +73,7 @@
         <!-- AUTO->`0`("数据库ID自增") INPUT->`1`(用户输入ID") ID_WORKER->`2`("全局唯一ID")
             UUID->`3`("全局唯一ID") -->
         <property name="idType" value="0"/>
-        <property name="dbColumnUnderline" value="true" />
+        <property name="dbColumnUnderline" value="true"/>
     </bean>
 
     <!-- MyBatis 动态扫描 -->
@@ -86,7 +86,7 @@
           class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
         <property name="dataSource" ref="dataSource"/>
     </bean>
-    
+
     <!-- 采用注解方式开启事务控制 -->
-     <tx:annotation-driven transaction-manager="transactionManager" proxy-target-class="true"/>
+    <tx:annotation-driven transaction-manager="transactionManager" proxy-target-class="true"/>
 </beans>
